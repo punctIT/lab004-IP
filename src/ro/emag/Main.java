@@ -7,7 +7,7 @@ import ro.emag.logistics.*;
 import ro.emag.payment.*;
 import ro.emag.marketing.*;
 import ro.emag.services.*;
-
+import java.util.UUID;
 public class Main {
     public static void main(String[] args) {
         // auth
@@ -27,7 +27,7 @@ public class Main {
 
         // catalog
         Category category = new Category(1, "Electronice");
-        Brand brand = new Brand(1, "Samsung");
+        Brand brand = new Brand(UUID.randomUUID(), "Samsung");
         Product product = new Product(1, "Galaxy S24", 3999.99, 50);
         Catalog catalog = new Catalog(1, "Promotii Vara");
         CatalogManager catalogManager = new CatalogManager(1, 3);
