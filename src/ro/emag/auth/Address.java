@@ -13,6 +13,31 @@ public class Address {
     private String country;
     private boolean isDefault;
 
+    public Address(UUID id, UUID userId, String label, String street, String city, String county, String postalCode, String country, boolean isDefault) {
+        this.id = id;
+        this.userId = userId;
+        this.label = label;
+        this.street = street;
+        this.city = city;
+        this.county = county;
+        this.postalCode = postalCode;
+        this.country = country;
+        this.isDefault = isDefault;
+    }
+
+    public Address() {
+    }
+
+    public Address(UUID id, UUID userId, String street, String city, String county, String postalCode, String country) {
+        this.id = id;
+        this.userId = userId;
+        this.street = street;
+        this.city = city;
+        this.county = county;
+        this.postalCode = postalCode;
+        this.country = country;
+    }
+
     public UUID getId() {
         return id;
     }
