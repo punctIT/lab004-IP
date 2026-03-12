@@ -8,6 +8,9 @@ import ro.emag.payment.*;
 import ro.emag.marketing.*;
 import ro.emag.services.*;
 
+
+import java.util.UUID;
+
 public class Main {
     public static void main(String[] args) {
         // auth
@@ -16,7 +19,7 @@ public class Main {
         Client client = new Client(1, 100, 1);
         Seller seller = new Seller(2, "TechShop SRL", "RO12345678", 2);
         Admin admin = new Admin(1, "ALL", 3);
-        Address address = new Address(1, 1, "Strada Florilor 5", "Bucuresti", "Ilfov", "010101", "Romania");
+        Address address = new Address(UUID.randomUUID(), UUID.randomUUID(), "Strada Florilor 5", "Bucuresti", "Ilfov", "010101", "Romania");
 
         System.out.println(user);
         System.out.println(profile);
@@ -27,7 +30,7 @@ public class Main {
 
         // catalog
         Category category = new Category(1, "Electronice");
-        Brand brand = new Brand(1, "Samsung");
+        Brand brand = new Brand(UUID.randomUUID(), "Samsung");
         Product product = new Product(1, "Galaxy S24", 3999.99, 50);
         Catalog catalog = new Catalog(1, "Promotii Vara");
         CatalogManager catalogManager = new CatalogManager(1, 3);
