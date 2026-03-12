@@ -31,7 +31,7 @@ public class Main {
         // catalog
         Category category = new Category(1, "Electronice");
         Brand brand = new Brand(UUID.randomUUID(), "Samsung");
-        Product product = new Product(1, "Galaxy S24", 3999.99, 50);
+        Product product = new Product(UUID.randomUUID(), "Galaxy S24", 3999.99, 50);
         Catalog catalog = new Catalog(1, "Promotii Vara");
         CatalogManager catalogManager = new CatalogManager(1, 3);
         CatalogProduct catalogProduct = new CatalogProduct(1, 1, 1);
