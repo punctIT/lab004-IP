@@ -1,0 +1,15 @@
+1. Diagrama C4:
+    - Containers: Patranea Cosmin
+    - SystemContext: Patranea Cosmin
+    - BackendComponents: Ionut Toma
+    - PlaceOrderFlow: Ionut Toma
+
+2. Creare clasa fara AI
+- Implementare clasa Address: Palcu Stefan
+- Implementare clasa Brand: Tilica Alexandru-Mihail
+- Impementare clasa Product: Tanasuca George
+
+3. Creare clasa cu AI
+- Facere clase sa compileze, Schimbare ID in UUID, Adaugare returns la toate si structura mai clean: Ivaniciuc Teodor
+
+4. Supervisor: Toma Ionut
